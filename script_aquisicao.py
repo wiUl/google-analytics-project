@@ -80,11 +80,29 @@ df['taxa_engajamento'] = pd.to_numeric(df['taxa_engajamento'])
 #Exibe os dados no terminal(Opcional, basta remover o comentário da linha seguinte)
 #print(df)
 
+#puxa os dados antigos da planilha
+if ARQUIVO_EXCEL.exists():
+
+    df_antigo = pd.read_excel(ARQUIVO_EXCEL, sheet_name="Aquisicao")
+
+else:
+    df_antigo = pd.DataFrame()
+
+
+#concatena dados antigos + dados novos
+df_final = pd.concat([df_antigo, df], ignore_index=True)
+
+#remove duplicatas
+df_final = df_final.drop_duplicates(subset=["data", "canal", "origem", "meio"], keep="last")
+
+#ordena os dados por data
+df_final = df_final.sort_values(by="data")
+
 #Salva no Excel
 with pd.ExcelWriter(
     ARQUIVO_EXCEL,
       engine="openpyxl",
       mode="a" if ARQUIVO_EXCEL.exists() else 'w',
-      if_sheet_exists="overlay") as writer:
+      if_sheet_exists="replace") as writer:
 
-    df.to_excel(writer, sheet_name="Aquisicao", index=False)
+    df_final.to_excel(writer, sheet_name="Aquisicao", index=False)
