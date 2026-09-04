@@ -104,4 +104,4 @@ with pd.ExcelWriter(
       mode="a" if ARQUIVO_EXCEL.exists() else 'w',
       if_sheet_exists="replace") as writer:
 
-    df_final.to_excel(writer, sheet_name="Dispostivos", index=False)
+    df_final.to_excel(writer, sheet_name="Dispositivos", index=False)
