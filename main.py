@@ -1,6 +1,9 @@
 import subprocess
 import sys
+import os
 
+
+# PARTE 1 - Roda os arquivos locais e atualiza a planilha localmente
 scripts = [
     "script_resumo_trafego.py",
     "script_paginas.py",
@@ -22,3 +25,19 @@ for script in scripts:
     print(f"{script} executado com sucessso!")
 
 print("\nTodos os relatórios foram atualizados.")
+
+
+#PARTE 2 - Atualiza o arquivo na nuvem(teams/sharepoint)
+
+FLOW_URL = (
+    "ms-powerautomate:/console/flow/run"
+    "?environmentid=Default-e0b8308a-8004-442e-bd3d-ec333d7809b7"
+    "&workflowid=7ba33d61-aa70-490b-936a-b2b0c9406293"
+    "&source=Other"
+)
+
+print("\nIniciando envio para o SharePoint...")
+
+os.startfile(FLOW_URL)
+
+print("Fluxo do Power Automate iniciado!")
