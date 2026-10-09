@@ -30,10 +30,7 @@ print("\nTodos os relatórios foram atualizados.")
 #PARTE 2 - Atualiza o arquivo na nuvem(teams/sharepoint)
 
 FLOW_URL = (
-    "ms-powerautomate:/console/flow/run"
-    "?environmentid=Default-e0b8308a-8004-442e-bd3d-ec333d7809b7"
-    "&workflowid=7ba33d61-aa70-490b-936a-b2b0c9406293"
-    "&source=Other"
+    "ms-powerautomate:/console/flow/run?environmentid=Default-e0b8308a-8004-442e-bd3d-ec333d7809b7&workflowid=c0d08ea8-4f8e-4777-a335-4c701b9d0371&source=Other"
 )
 
 print("\nIniciando envio para o SharePoint...")
