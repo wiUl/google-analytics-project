@@ -10,6 +10,8 @@ from google.analytics.data_v1beta.types import (
 
 import pandas as pd
 
+from planilha_utils import atualizar_planilha, logger
+
 PROPERTY_ID = "505865403"
 
 ARQUIVO_EXCEL = Path(
@@ -63,6 +65,10 @@ for row in response.rows:
 #Converte a lista em DataFrame
 df = pd.DataFrame(dados)
 
+if df.empty:
+    logger.error("A consulta do Google Analytics não retornou linhas; atualização cancelada para evitar perda de dados.")
+    raise ValueError("Consulta do Google Analytics retornou zero linhas.")
+
 
 #converte a data para o formato YYYY-MM-DD
 df['data'] = pd.to_datetime(df['data']).dt.strftime("%Y-%m-%d")
@@ -78,29 +84,10 @@ df['tempo_medio_sessao'] = pd.to_numeric(df['tempo_medio_sessao'])
 #Exibe os dados no terminal(Opcional, basta remover o comentário da linha seguinte)
 #print(df)
 
-#puxa os dados antigos da planilha
-if ARQUIVO_EXCEL.exists():
-
-    df_antigo = pd.read_excel(ARQUIVO_EXCEL, sheet_name="Paginas")
-
-else:
-    df_antigo = pd.DataFrame()
-
-
-#concatena dados antigos + dados novos
-df_final = pd.concat([df_antigo, df], ignore_index=True)
-
-#remove duplicatas
-df_final = df_final.drop_duplicates(subset=["data", "endereco"], keep="last")
-
-#ordena os dados por data
-df_final = df_final.sort_values(by="data")
-
-#Salva no Excel
-with pd.ExcelWriter(
-    ARQUIVO_EXCEL,
-      engine="openpyxl",
-      mode="a" if ARQUIVO_EXCEL.exists() else 'w',
-      if_sheet_exists="replace") as writer:
-
-    df_final.to_excel(writer, sheet_name="Paginas", index=False)
+# Valida e consolida os dados, preservando as outras abas do arquivo.
+atualizar_planilha(
+    arquivo=ARQUIVO_EXCEL,
+    dados_novos=df,
+    nome_aba="Paginas",
+    chaves=["data", "endereco"],
+)
