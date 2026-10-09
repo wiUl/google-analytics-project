@@ -1,0 +1,361 @@
+2026-10-09 12:54:20,237 | INFO | orquestrador | Iniciando script: script_resumo_trafego.py
+2026-10-09 12:54:22,384 | INFO | google_analytics | Resumo_Diario: validação concluída; 4 linhas recebidas, 43 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 12:54:22,488 | WARNING | orquestrador | [script_resumo_trafego.py] mensagens:
+2026-10-09 12:54:22,384 | INFO | google_analytics | Resumo_Diario: valida��o conclu�da; 4 linhas recebidas, 43 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 12:54:22,488 | INFO | orquestrador | Script concluído: script_resumo_trafego.py
+2026-10-09 12:54:22,489 | INFO | orquestrador | Iniciando script: script_paginas.py
+2026-10-09 12:54:24,021 | INFO | google_analytics | Paginas: validação concluída; 16 linhas recebidas, 140 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 12:54:24,113 | WARNING | orquestrador | [script_paginas.py] mensagens:
+2026-10-09 12:54:24,021 | INFO | google_analytics | Paginas: valida��o conclu�da; 16 linhas recebidas, 140 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 12:54:24,114 | INFO | orquestrador | Script concluído: script_paginas.py
+2026-10-09 12:54:24,114 | INFO | orquestrador | Iniciando script: script_aquisicao.py
+2026-10-09 12:54:26,178 | INFO | google_analytics | Aquisicao: validação concluída; 10 linhas recebidas, 89 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 12:54:26,265 | WARNING | orquestrador | [script_aquisicao.py] mensagens:
+2026-10-09 12:54:26,178 | INFO | google_analytics | Aquisicao: valida��o conclu�da; 10 linhas recebidas, 89 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 12:54:26,265 | INFO | orquestrador | Script concluído: script_aquisicao.py
+2026-10-09 12:54:26,265 | INFO | orquestrador | Iniciando script: script_dispositivos.py
+2026-10-09 12:54:28,170 | INFO | google_analytics | Dispositivos: validação concluída; 5 linhas recebidas, 65 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 12:54:28,262 | WARNING | orquestrador | [script_dispositivos.py] mensagens:
+2026-10-09 12:54:28,170 | INFO | google_analytics | Dispositivos: valida��o conclu�da; 5 linhas recebidas, 65 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 12:54:28,262 | INFO | orquestrador | Script concluído: script_dispositivos.py
+2026-10-09 12:54:28,262 | INFO | orquestrador | Iniciando script: script_localizacao.py
+2026-10-09 12:54:30,173 | INFO | google_analytics | Localização: validação concluída; 10 linhas recebidas, 91 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 12:54:30,268 | WARNING | orquestrador | [script_localizacao.py] mensagens:
+2026-10-09 12:54:30,173 | INFO | google_analytics | Localiza��o: valida��o conclu�da; 10 linhas recebidas, 91 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 12:54:30,268 | INFO | orquestrador | Script concluído: script_localizacao.py
+2026-10-09 12:54:30,268 | INFO | orquestrador | Iniciando script: script_eventos.py
+2026-10-09 12:54:32,199 | INFO | google_analytics | Eventos: validação concluída; 25 linhas recebidas, 294 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 12:54:32,294 | WARNING | orquestrador | [script_eventos.py] mensagens:
+2026-10-09 12:54:32,199 | INFO | google_analytics | Eventos: valida��o conclu�da; 25 linhas recebidas, 294 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 12:54:32,294 | INFO | orquestrador | Script concluído: script_eventos.py
+2026-10-09 12:54:32,294 | INFO | orquestrador | Todos os relatórios foram atualizados: C:\Users\Inyaga UFRJ\Documents\Automacao-Site\google-analytics-project\output\relatorio_site_inyaga.xlsx
+2026-10-09 12:54:32,295 | INFO | orquestrador | Solicitando execução do Power Automate Desktop. runId=9a9bc5f3-4b25-4680-b25b-7ffc18a29890
+2026-10-09 12:54:32,387 | INFO | orquestrador | Solicitação enviada ao PAD; aguardando status em C:\Users\Inyaga UFRJ\Documents\Automacao-Site\google-analytics-project\output\flow_status.json. Abrir a URL não confirma que o fluxo terminou.
+2026-10-09 13:02:13,203 | INFO | orquestrador | Iniciando script: script_resumo_trafego.py
+2026-10-09 13:02:15,700 | INFO | google_analytics | Resumo_Diario: validação concluída; 4 linhas recebidas, 43 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:02:15,800 | WARNING | orquestrador | [script_resumo_trafego.py] mensagens:
+2026-10-09 13:02:15,700 | INFO | google_analytics | Resumo_Diario: valida��o conclu�da; 4 linhas recebidas, 43 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:02:15,800 | INFO | orquestrador | Script concluído: script_resumo_trafego.py
+2026-10-09 13:02:15,800 | INFO | orquestrador | Iniciando script: script_paginas.py
+2026-10-09 13:02:17,761 | INFO | google_analytics | Paginas: validação concluída; 16 linhas recebidas, 140 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:02:17,850 | WARNING | orquestrador | [script_paginas.py] mensagens:
+2026-10-09 13:02:17,761 | INFO | google_analytics | Paginas: valida��o conclu�da; 16 linhas recebidas, 140 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:02:17,850 | INFO | orquestrador | Script concluído: script_paginas.py
+2026-10-09 13:02:17,850 | INFO | orquestrador | Iniciando script: script_aquisicao.py
+2026-10-09 13:02:19,834 | INFO | google_analytics | Aquisicao: validação concluída; 10 linhas recebidas, 89 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:02:19,922 | WARNING | orquestrador | [script_aquisicao.py] mensagens:
+2026-10-09 13:02:19,834 | INFO | google_analytics | Aquisicao: valida��o conclu�da; 10 linhas recebidas, 89 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:02:19,922 | INFO | orquestrador | Script concluído: script_aquisicao.py
+2026-10-09 13:02:19,922 | INFO | orquestrador | Iniciando script: script_dispositivos.py
+2026-10-09 13:02:21,805 | INFO | google_analytics | Dispositivos: validação concluída; 5 linhas recebidas, 65 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:02:21,897 | WARNING | orquestrador | [script_dispositivos.py] mensagens:
+2026-10-09 13:02:21,805 | INFO | google_analytics | Dispositivos: valida��o conclu�da; 5 linhas recebidas, 65 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:02:21,897 | INFO | orquestrador | Script concluído: script_dispositivos.py
+2026-10-09 13:02:21,897 | INFO | orquestrador | Iniciando script: script_localizacao.py
+2026-10-09 13:02:23,880 | INFO | google_analytics | Localização: validação concluída; 10 linhas recebidas, 91 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:02:23,970 | WARNING | orquestrador | [script_localizacao.py] mensagens:
+2026-10-09 13:02:23,880 | INFO | google_analytics | Localiza��o: valida��o conclu�da; 10 linhas recebidas, 91 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:02:23,970 | INFO | orquestrador | Script concluído: script_localizacao.py
+2026-10-09 13:02:23,970 | INFO | orquestrador | Iniciando script: script_eventos.py
+2026-10-09 13:02:25,443 | INFO | google_analytics | Eventos: validação concluída; 25 linhas recebidas, 294 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:02:25,533 | WARNING | orquestrador | [script_eventos.py] mensagens:
+2026-10-09 13:02:25,443 | INFO | google_analytics | Eventos: valida��o conclu�da; 25 linhas recebidas, 294 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:02:25,534 | INFO | orquestrador | Script concluído: script_eventos.py
+2026-10-09 13:02:25,534 | INFO | orquestrador | Todos os relatórios foram atualizados: C:\Users\Inyaga UFRJ\Documents\Automacao-Site\google-analytics-project\output\relatorio_site_inyaga.xlsx
+2026-10-09 13:02:25,534 | INFO | orquestrador | Solicitando execução do Power Automate Desktop. runId=5ef7db20-82ba-413a-b911-0c5b9e6f2007
+2026-10-09 13:02:25,611 | INFO | orquestrador | Solicitação enviada ao PAD; aguardando status em C:\Users\Inyaga UFRJ\Documents\Automacao-Site\google-analytics-project\output\flow_status.json. Abrir a URL não confirma que o fluxo terminou.
+2026-10-09 13:05:31,891 | INFO | orquestrador | Iniciando script: script_resumo_trafego.py
+2026-10-09 13:05:33,958 | INFO | google_analytics | Resumo_Diario: validação concluída; 4 linhas recebidas, 43 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:05:34,058 | WARNING | orquestrador | [script_resumo_trafego.py] mensagens:
+2026-10-09 13:05:33,958 | INFO | google_analytics | Resumo_Diario: valida��o conclu�da; 4 linhas recebidas, 43 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:05:34,058 | INFO | orquestrador | Script concluído: script_resumo_trafego.py
+2026-10-09 13:05:34,058 | INFO | orquestrador | Iniciando script: script_paginas.py
+2026-10-09 13:05:35,799 | INFO | google_analytics | Paginas: validação concluída; 16 linhas recebidas, 140 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:05:35,888 | WARNING | orquestrador | [script_paginas.py] mensagens:
+2026-10-09 13:05:35,799 | INFO | google_analytics | Paginas: valida��o conclu�da; 16 linhas recebidas, 140 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:05:35,888 | INFO | orquestrador | Script concluído: script_paginas.py
+2026-10-09 13:05:35,888 | INFO | orquestrador | Iniciando script: script_aquisicao.py
+2026-10-09 13:05:37,180 | INFO | google_analytics | Aquisicao: validação concluída; 10 linhas recebidas, 89 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:05:37,273 | WARNING | orquestrador | [script_aquisicao.py] mensagens:
+2026-10-09 13:05:37,180 | INFO | google_analytics | Aquisicao: valida��o conclu�da; 10 linhas recebidas, 89 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:05:37,273 | INFO | orquestrador | Script concluído: script_aquisicao.py
+2026-10-09 13:05:37,273 | INFO | orquestrador | Iniciando script: script_dispositivos.py
+2026-10-09 13:05:38,596 | INFO | google_analytics | Dispositivos: validação concluída; 5 linhas recebidas, 65 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:05:38,689 | WARNING | orquestrador | [script_dispositivos.py] mensagens:
+2026-10-09 13:05:38,596 | INFO | google_analytics | Dispositivos: valida��o conclu�da; 5 linhas recebidas, 65 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:05:38,690 | INFO | orquestrador | Script concluído: script_dispositivos.py
+2026-10-09 13:05:38,690 | INFO | orquestrador | Iniciando script: script_localizacao.py
+2026-10-09 13:05:40,402 | INFO | google_analytics | Localização: validação concluída; 10 linhas recebidas, 91 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:05:40,489 | WARNING | orquestrador | [script_localizacao.py] mensagens:
+2026-10-09 13:05:40,402 | INFO | google_analytics | Localiza��o: valida��o conclu�da; 10 linhas recebidas, 91 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:05:40,489 | INFO | orquestrador | Script concluído: script_localizacao.py
+2026-10-09 13:05:40,490 | INFO | orquestrador | Iniciando script: script_eventos.py
+2026-10-09 13:05:42,234 | INFO | google_analytics | Eventos: validação concluída; 25 linhas recebidas, 294 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:05:42,324 | WARNING | orquestrador | [script_eventos.py] mensagens:
+2026-10-09 13:05:42,234 | INFO | google_analytics | Eventos: valida��o conclu�da; 25 linhas recebidas, 294 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:05:42,324 | INFO | orquestrador | Script concluído: script_eventos.py
+2026-10-09 13:05:42,325 | INFO | orquestrador | Todos os relatórios foram atualizados: C:\Users\Inyaga UFRJ\Documents\Automacao-Site\google-analytics-project\output\relatorio_site_inyaga.xlsx
+2026-10-09 13:05:42,325 | INFO | orquestrador | Solicitando execução do Power Automate Desktop. runId=5693f2f8-c3b5-44f6-8f28-b1728aee12b3
+2026-10-09 13:05:42,401 | INFO | orquestrador | Solicitação enviada ao PAD; aguardando status em C:\Users\Inyaga UFRJ\Documents\Automacao-Site\google-analytics-project\output\flow_status.json. Abrir a URL não confirma que o fluxo terminou.
+2026-10-09 13:10:20,034 | INFO | orquestrador | Iniciando script: script_resumo_trafego.py
+2026-10-09 13:10:22,498 | INFO | google_analytics | Resumo_Diario: validação concluída; 4 linhas recebidas, 43 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:10:22,600 | WARNING | orquestrador | [script_resumo_trafego.py] mensagens:
+2026-10-09 13:10:22,498 | INFO | google_analytics | Resumo_Diario: valida��o conclu�da; 4 linhas recebidas, 43 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:10:22,601 | INFO | orquestrador | Script concluído: script_resumo_trafego.py
+2026-10-09 13:10:22,601 | INFO | orquestrador | Iniciando script: script_paginas.py
+2026-10-09 13:10:24,118 | INFO | google_analytics | Paginas: validação concluída; 16 linhas recebidas, 140 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:10:24,205 | WARNING | orquestrador | [script_paginas.py] mensagens:
+2026-10-09 13:10:24,118 | INFO | google_analytics | Paginas: valida��o conclu�da; 16 linhas recebidas, 140 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:10:24,205 | INFO | orquestrador | Script concluído: script_paginas.py
+2026-10-09 13:10:24,205 | INFO | orquestrador | Iniciando script: script_aquisicao.py
+2026-10-09 13:10:26,149 | INFO | google_analytics | Aquisicao: validação concluída; 10 linhas recebidas, 89 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:10:26,241 | WARNING | orquestrador | [script_aquisicao.py] mensagens:
+2026-10-09 13:10:26,149 | INFO | google_analytics | Aquisicao: valida��o conclu�da; 10 linhas recebidas, 89 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:10:26,241 | INFO | orquestrador | Script concluído: script_aquisicao.py
+2026-10-09 13:10:26,241 | INFO | orquestrador | Iniciando script: script_dispositivos.py
+2026-10-09 13:10:28,210 | INFO | google_analytics | Dispositivos: validação concluída; 5 linhas recebidas, 65 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:10:28,303 | WARNING | orquestrador | [script_dispositivos.py] mensagens:
+2026-10-09 13:10:28,210 | INFO | google_analytics | Dispositivos: valida��o conclu�da; 5 linhas recebidas, 65 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:10:28,303 | INFO | orquestrador | Script concluído: script_dispositivos.py
+2026-10-09 13:10:28,303 | INFO | orquestrador | Iniciando script: script_localizacao.py
+2026-10-09 13:10:30,711 | INFO | google_analytics | Localização: validação concluída; 10 linhas recebidas, 91 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:10:30,800 | WARNING | orquestrador | [script_localizacao.py] mensagens:
+2026-10-09 13:10:30,711 | INFO | google_analytics | Localiza��o: valida��o conclu�da; 10 linhas recebidas, 91 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:10:30,800 | INFO | orquestrador | Script concluído: script_localizacao.py
+2026-10-09 13:10:30,800 | INFO | orquestrador | Iniciando script: script_eventos.py
+2026-10-09 13:10:32,612 | INFO | google_analytics | Eventos: validação concluída; 25 linhas recebidas, 294 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:10:32,700 | WARNING | orquestrador | [script_eventos.py] mensagens:
+2026-10-09 13:10:32,612 | INFO | google_analytics | Eventos: valida��o conclu�da; 25 linhas recebidas, 294 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:10:32,700 | INFO | orquestrador | Script concluído: script_eventos.py
+2026-10-09 13:10:32,700 | INFO | orquestrador | Todos os relatórios foram atualizados: C:\Users\Inyaga UFRJ\Documents\Automacao-Site\google-analytics-project\output\relatorio_site_inyaga.xlsx
+2026-10-09 13:10:32,701 | INFO | orquestrador | Solicitando execução do Power Automate Desktop. runId=d2d8c7c3-21aa-4995-bdf6-2eb31c0a57d7
+2026-10-09 13:10:32,773 | INFO | orquestrador | Solicitação enviada ao PAD; aguardando status em C:\Users\Inyaga UFRJ\Documents\Automacao-Site\google-analytics-project\output\flow_status.json. Abrir a URL não confirma que o fluxo terminou.
+2026-10-09 13:21:41,878 | INFO | orquestrador | Iniciando script: script_resumo_trafego.py
+2026-10-09 13:21:44,126 | INFO | google_analytics | Resumo_Diario: validação concluída; 4 linhas recebidas, 43 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:21:44,219 | WARNING | orquestrador | [script_resumo_trafego.py] mensagens:
+2026-10-09 13:21:44,126 | INFO | google_analytics | Resumo_Diario: valida��o conclu�da; 4 linhas recebidas, 43 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:21:44,219 | INFO | orquestrador | Script concluído: script_resumo_trafego.py
+2026-10-09 13:21:44,220 | INFO | orquestrador | Iniciando script: script_paginas.py
+2026-10-09 13:21:46,451 | INFO | google_analytics | Paginas: validação concluída; 16 linhas recebidas, 140 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:21:46,538 | WARNING | orquestrador | [script_paginas.py] mensagens:
+2026-10-09 13:21:46,451 | INFO | google_analytics | Paginas: valida��o conclu�da; 16 linhas recebidas, 140 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:21:46,538 | INFO | orquestrador | Script concluído: script_paginas.py
+2026-10-09 13:21:46,538 | INFO | orquestrador | Iniciando script: script_aquisicao.py
+2026-10-09 13:21:48,615 | INFO | google_analytics | Aquisicao: validação concluída; 10 linhas recebidas, 89 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:21:48,707 | WARNING | orquestrador | [script_aquisicao.py] mensagens:
+2026-10-09 13:21:48,615 | INFO | google_analytics | Aquisicao: valida��o conclu�da; 10 linhas recebidas, 89 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:21:48,707 | INFO | orquestrador | Script concluído: script_aquisicao.py
+2026-10-09 13:21:48,707 | INFO | orquestrador | Iniciando script: script_dispositivos.py
+2026-10-09 13:21:50,613 | INFO | google_analytics | Dispositivos: validação concluída; 5 linhas recebidas, 65 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:21:50,704 | WARNING | orquestrador | [script_dispositivos.py] mensagens:
+2026-10-09 13:21:50,613 | INFO | google_analytics | Dispositivos: valida��o conclu�da; 5 linhas recebidas, 65 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:21:50,705 | INFO | orquestrador | Script concluído: script_dispositivos.py
+2026-10-09 13:21:50,705 | INFO | orquestrador | Iniciando script: script_localizacao.py
+2026-10-09 13:21:52,641 | INFO | google_analytics | Localização: validação concluída; 10 linhas recebidas, 91 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:21:52,731 | WARNING | orquestrador | [script_localizacao.py] mensagens:
+2026-10-09 13:21:52,641 | INFO | google_analytics | Localiza��o: valida��o conclu�da; 10 linhas recebidas, 91 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:21:52,731 | INFO | orquestrador | Script concluído: script_localizacao.py
+2026-10-09 13:21:52,731 | INFO | orquestrador | Iniciando script: script_eventos.py
+2026-10-09 13:21:54,666 | INFO | google_analytics | Eventos: validação concluída; 25 linhas recebidas, 294 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:21:54,757 | WARNING | orquestrador | [script_eventos.py] mensagens:
+2026-10-09 13:21:54,666 | INFO | google_analytics | Eventos: valida��o conclu�da; 25 linhas recebidas, 294 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:21:54,757 | INFO | orquestrador | Script concluído: script_eventos.py
+2026-10-09 13:21:54,758 | INFO | orquestrador | Todos os relatórios foram atualizados: C:\Users\Inyaga UFRJ\Documents\Automacao-Site\google-analytics-project\output\relatorio_site_inyaga.xlsx
+2026-10-09 13:21:54,758 | INFO | orquestrador | Solicitando execução do Power Automate Desktop. runId=32c84fcf-1c93-4c46-9a39-c09b85803fad
+2026-10-09 13:21:54,840 | INFO | orquestrador | Solicitação enviada ao PAD; aguardando status em C:\Users\Inyaga UFRJ\Documents\Automacao-Site\google-analytics-project\output\flow_status.json. Abrir a URL não confirma que o fluxo terminou.
+2026-10-09 13:23:18,075 | INFO | orquestrador | Iniciando script: script_resumo_trafego.py
+2026-10-09 13:23:20,065 | INFO | google_analytics | Resumo_Diario: validação concluída; 4 linhas recebidas, 43 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:23:20,174 | WARNING | orquestrador | [script_resumo_trafego.py] mensagens:
+2026-10-09 13:23:20,065 | INFO | google_analytics | Resumo_Diario: valida��o conclu�da; 4 linhas recebidas, 43 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:23:20,174 | INFO | orquestrador | Script concluído: script_resumo_trafego.py
+2026-10-09 13:23:20,174 | INFO | orquestrador | Iniciando script: script_paginas.py
+2026-10-09 13:23:21,868 | INFO | google_analytics | Paginas: validação concluída; 16 linhas recebidas, 140 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:23:21,957 | WARNING | orquestrador | [script_paginas.py] mensagens:
+2026-10-09 13:23:21,868 | INFO | google_analytics | Paginas: valida��o conclu�da; 16 linhas recebidas, 140 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:23:21,957 | INFO | orquestrador | Script concluído: script_paginas.py
+2026-10-09 13:23:21,957 | INFO | orquestrador | Iniciando script: script_aquisicao.py
+2026-10-09 13:23:23,541 | INFO | google_analytics | Aquisicao: validação concluída; 10 linhas recebidas, 89 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:23:23,630 | WARNING | orquestrador | [script_aquisicao.py] mensagens:
+2026-10-09 13:23:23,541 | INFO | google_analytics | Aquisicao: valida��o conclu�da; 10 linhas recebidas, 89 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:23:23,630 | INFO | orquestrador | Script concluído: script_aquisicao.py
+2026-10-09 13:23:23,630 | INFO | orquestrador | Iniciando script: script_dispositivos.py
+2026-10-09 13:23:25,333 | INFO | google_analytics | Dispositivos: validação concluída; 5 linhas recebidas, 65 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:23:25,423 | WARNING | orquestrador | [script_dispositivos.py] mensagens:
+2026-10-09 13:23:25,333 | INFO | google_analytics | Dispositivos: valida��o conclu�da; 5 linhas recebidas, 65 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:23:25,423 | INFO | orquestrador | Script concluído: script_dispositivos.py
+2026-10-09 13:23:25,423 | INFO | orquestrador | Iniciando script: script_localizacao.py
+2026-10-09 13:23:27,395 | INFO | google_analytics | Localização: validação concluída; 10 linhas recebidas, 91 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:23:27,491 | WARNING | orquestrador | [script_localizacao.py] mensagens:
+2026-10-09 13:23:27,395 | INFO | google_analytics | Localiza��o: valida��o conclu�da; 10 linhas recebidas, 91 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:23:27,491 | INFO | orquestrador | Script concluído: script_localizacao.py
+2026-10-09 13:23:27,491 | INFO | orquestrador | Iniciando script: script_eventos.py
+2026-10-09 13:23:28,864 | INFO | google_analytics | Eventos: validação concluída; 25 linhas recebidas, 294 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:23:28,953 | WARNING | orquestrador | [script_eventos.py] mensagens:
+2026-10-09 13:23:28,864 | INFO | google_analytics | Eventos: valida��o conclu�da; 25 linhas recebidas, 294 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:23:28,953 | INFO | orquestrador | Script concluído: script_eventos.py
+2026-10-09 13:23:28,953 | INFO | orquestrador | Todos os relatórios foram atualizados: C:\Users\Inyaga UFRJ\Documents\Automacao-Site\google-analytics-project\output\relatorio_site_inyaga.xlsx
+2026-10-09 13:23:28,953 | INFO | orquestrador | Solicitando execução do Power Automate Desktop. runId=812aa930-8b8c-4aba-8cc2-dca8a9a39638
+2026-10-09 13:23:29,033 | INFO | orquestrador | Solicitação enviada ao PAD; aguardando status em C:\Users\Inyaga UFRJ\Documents\Automacao-Site\google-analytics-project\output\flow_status.json. Abrir a URL não confirma que o fluxo terminou.
+2026-10-09 13:30:06,655 | INFO | orquestrador | Iniciando script: script_resumo_trafego.py
+2026-10-09 13:30:08,328 | INFO | google_analytics | Resumo_Diario: validação concluída; 4 linhas recebidas, 43 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:30:08,431 | WARNING | orquestrador | [script_resumo_trafego.py] mensagens:
+2026-10-09 13:30:08,328 | INFO | google_analytics | Resumo_Diario: valida��o conclu�da; 4 linhas recebidas, 43 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:30:08,431 | INFO | orquestrador | Script concluído: script_resumo_trafego.py
+2026-10-09 13:30:08,431 | INFO | orquestrador | Iniciando script: script_paginas.py
+2026-10-09 13:30:10,393 | INFO | google_analytics | Paginas: validação concluída; 16 linhas recebidas, 140 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:30:10,479 | WARNING | orquestrador | [script_paginas.py] mensagens:
+2026-10-09 13:30:10,393 | INFO | google_analytics | Paginas: valida��o conclu�da; 16 linhas recebidas, 140 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:30:10,480 | INFO | orquestrador | Script concluído: script_paginas.py
+2026-10-09 13:30:10,480 | INFO | orquestrador | Iniciando script: script_aquisicao.py
+2026-10-09 13:30:11,968 | INFO | google_analytics | Aquisicao: validação concluída; 10 linhas recebidas, 89 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:30:12,060 | WARNING | orquestrador | [script_aquisicao.py] mensagens:
+2026-10-09 13:30:11,968 | INFO | google_analytics | Aquisicao: valida��o conclu�da; 10 linhas recebidas, 89 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:30:12,060 | INFO | orquestrador | Script concluído: script_aquisicao.py
+2026-10-09 13:30:12,060 | INFO | orquestrador | Iniciando script: script_dispositivos.py
+2026-10-09 13:30:14,030 | INFO | google_analytics | Dispositivos: validação concluída; 5 linhas recebidas, 65 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:30:14,123 | WARNING | orquestrador | [script_dispositivos.py] mensagens:
+2026-10-09 13:30:14,030 | INFO | google_analytics | Dispositivos: valida��o conclu�da; 5 linhas recebidas, 65 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:30:14,123 | INFO | orquestrador | Script concluído: script_dispositivos.py
+2026-10-09 13:30:14,123 | INFO | orquestrador | Iniciando script: script_localizacao.py
+2026-10-09 13:30:16,044 | INFO | google_analytics | Localização: validação concluída; 10 linhas recebidas, 91 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:30:16,145 | WARNING | orquestrador | [script_localizacao.py] mensagens:
+2026-10-09 13:30:16,044 | INFO | google_analytics | Localiza��o: valida��o conclu�da; 10 linhas recebidas, 91 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:30:16,145 | INFO | orquestrador | Script concluído: script_localizacao.py
+2026-10-09 13:30:16,145 | INFO | orquestrador | Iniciando script: script_eventos.py
+2026-10-09 13:30:18,162 | INFO | google_analytics | Eventos: validação concluída; 25 linhas recebidas, 294 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:30:18,254 | WARNING | orquestrador | [script_eventos.py] mensagens:
+2026-10-09 13:30:18,162 | INFO | google_analytics | Eventos: valida��o conclu�da; 25 linhas recebidas, 294 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:30:18,255 | INFO | orquestrador | Script concluído: script_eventos.py
+2026-10-09 13:30:18,255 | INFO | orquestrador | Todos os relatórios foram atualizados: C:\Users\Inyaga UFRJ\Documents\Automacao-Site\google-analytics-project\output\relatorio_site_inyaga.xlsx
+2026-10-09 13:30:18,255 | INFO | orquestrador | Solicitando execução do Power Automate Desktop. runId=451b7891-5372-4e36-9da9-11f943d3aeb6
+2026-10-09 13:30:18,328 | INFO | orquestrador | Solicitação enviada ao PAD; aguardando status em C:\Users\Inyaga UFRJ\Documents\Automacao-Site\google-analytics-project\output\flow_status.json. Abrir a URL não confirma que o fluxo terminou.
+2026-10-09 13:33:51,814 | INFO | orquestrador | Iniciando script: script_resumo_trafego.py
+2026-10-09 13:33:53,882 | INFO | google_analytics | Resumo_Diario: validação concluída; 4 linhas recebidas, 43 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:33:53,983 | WARNING | orquestrador | [script_resumo_trafego.py] mensagens:
+2026-10-09 13:33:53,882 | INFO | google_analytics | Resumo_Diario: valida��o conclu�da; 4 linhas recebidas, 43 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:33:53,983 | INFO | orquestrador | Script concluído: script_resumo_trafego.py
+2026-10-09 13:33:53,983 | INFO | orquestrador | Iniciando script: script_paginas.py
+2026-10-09 13:33:55,979 | INFO | google_analytics | Paginas: validação concluída; 16 linhas recebidas, 140 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:33:56,080 | WARNING | orquestrador | [script_paginas.py] mensagens:
+2026-10-09 13:33:55,979 | INFO | google_analytics | Paginas: valida��o conclu�da; 16 linhas recebidas, 140 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:33:56,080 | INFO | orquestrador | Script concluído: script_paginas.py
+2026-10-09 13:33:56,080 | INFO | orquestrador | Iniciando script: script_aquisicao.py
+2026-10-09 13:33:57,636 | INFO | google_analytics | Aquisicao: validação concluída; 10 linhas recebidas, 89 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:33:57,729 | WARNING | orquestrador | [script_aquisicao.py] mensagens:
+2026-10-09 13:33:57,636 | INFO | google_analytics | Aquisicao: valida��o conclu�da; 10 linhas recebidas, 89 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:33:57,729 | INFO | orquestrador | Script concluído: script_aquisicao.py
+2026-10-09 13:33:57,729 | INFO | orquestrador | Iniciando script: script_dispositivos.py
+2026-10-09 13:33:59,152 | INFO | google_analytics | Dispositivos: validação concluída; 5 linhas recebidas, 65 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:33:59,244 | WARNING | orquestrador | [script_dispositivos.py] mensagens:
+2026-10-09 13:33:59,152 | INFO | google_analytics | Dispositivos: valida��o conclu�da; 5 linhas recebidas, 65 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:33:59,244 | INFO | orquestrador | Script concluído: script_dispositivos.py
+2026-10-09 13:33:59,244 | INFO | orquestrador | Iniciando script: script_localizacao.py
+2026-10-09 13:34:00,974 | INFO | google_analytics | Localização: validação concluída; 10 linhas recebidas, 91 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:34:01,068 | WARNING | orquestrador | [script_localizacao.py] mensagens:
+2026-10-09 13:34:00,974 | INFO | google_analytics | Localiza��o: valida��o conclu�da; 10 linhas recebidas, 91 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:34:01,069 | INFO | orquestrador | Script concluído: script_localizacao.py
+2026-10-09 13:34:01,069 | INFO | orquestrador | Iniciando script: script_eventos.py
+2026-10-09 13:34:02,830 | INFO | google_analytics | Eventos: validação concluída; 25 linhas recebidas, 294 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:34:02,924 | WARNING | orquestrador | [script_eventos.py] mensagens:
+2026-10-09 13:34:02,830 | INFO | google_analytics | Eventos: valida��o conclu�da; 25 linhas recebidas, 294 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:34:02,924 | INFO | orquestrador | Script concluído: script_eventos.py
+2026-10-09 13:34:02,924 | INFO | orquestrador | Todos os relatórios foram atualizados: C:\Users\Inyaga UFRJ\Documents\Automacao-Site\google-analytics-project\output\relatorio_site_inyaga.xlsx
+2026-10-09 13:34:02,925 | INFO | orquestrador | Solicitando execução do Power Automate Desktop. runId=47295514-3b8d-48a9-88e6-04833eb7834e
+2026-10-09 13:34:03,010 | INFO | orquestrador | Solicitação enviada ao PAD; aguardando status em C:\Users\Inyaga UFRJ\Documents\Automacao-Site\google-analytics-project\output\flow_status.json. Abrir a URL não confirma que o fluxo terminou.
+2026-10-09 13:35:52,152 | INFO | orquestrador | Iniciando script: script_resumo_trafego.py
+2026-10-09 13:35:54,329 | INFO | google_analytics | Resumo_Diario: validação concluída; 4 linhas recebidas, 43 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:35:54,426 | WARNING | orquestrador | [script_resumo_trafego.py] mensagens:
+2026-10-09 13:35:54,329 | INFO | google_analytics | Resumo_Diario: valida��o conclu�da; 4 linhas recebidas, 43 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:35:54,426 | INFO | orquestrador | Script concluído: script_resumo_trafego.py
+2026-10-09 13:35:54,427 | INFO | orquestrador | Iniciando script: script_paginas.py
+2026-10-09 13:35:56,182 | INFO | google_analytics | Paginas: validação concluída; 16 linhas recebidas, 140 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:35:56,273 | WARNING | orquestrador | [script_paginas.py] mensagens:
+2026-10-09 13:35:56,182 | INFO | google_analytics | Paginas: valida��o conclu�da; 16 linhas recebidas, 140 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:35:56,273 | INFO | orquestrador | Script concluído: script_paginas.py
+2026-10-09 13:35:56,273 | INFO | orquestrador | Iniciando script: script_aquisicao.py
+2026-10-09 13:35:58,037 | INFO | google_analytics | Aquisicao: validação concluída; 10 linhas recebidas, 89 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:35:58,129 | WARNING | orquestrador | [script_aquisicao.py] mensagens:
+2026-10-09 13:35:58,037 | INFO | google_analytics | Aquisicao: valida��o conclu�da; 10 linhas recebidas, 89 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:35:58,130 | INFO | orquestrador | Script concluído: script_aquisicao.py
+2026-10-09 13:35:58,130 | INFO | orquestrador | Iniciando script: script_dispositivos.py
+2026-10-09 13:35:59,707 | INFO | google_analytics | Dispositivos: validação concluída; 5 linhas recebidas, 65 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:35:59,794 | WARNING | orquestrador | [script_dispositivos.py] mensagens:
+2026-10-09 13:35:59,707 | INFO | google_analytics | Dispositivos: valida��o conclu�da; 5 linhas recebidas, 65 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:35:59,794 | INFO | orquestrador | Script concluído: script_dispositivos.py
+2026-10-09 13:35:59,794 | INFO | orquestrador | Iniciando script: script_localizacao.py
+2026-10-09 13:36:01,724 | INFO | google_analytics | Localização: validação concluída; 10 linhas recebidas, 91 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:36:01,820 | WARNING | orquestrador | [script_localizacao.py] mensagens:
+2026-10-09 13:36:01,724 | INFO | google_analytics | Localiza��o: valida��o conclu�da; 10 linhas recebidas, 91 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:36:01,820 | INFO | orquestrador | Script concluído: script_localizacao.py
+2026-10-09 13:36:01,820 | INFO | orquestrador | Iniciando script: script_eventos.py
+2026-10-09 13:36:03,684 | INFO | google_analytics | Eventos: validação concluída; 25 linhas recebidas, 294 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:36:03,776 | WARNING | orquestrador | [script_eventos.py] mensagens:
+2026-10-09 13:36:03,684 | INFO | google_analytics | Eventos: valida��o conclu�da; 25 linhas recebidas, 294 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:36:03,776 | INFO | orquestrador | Script concluído: script_eventos.py
+2026-10-09 13:36:03,777 | INFO | orquestrador | Todos os relatórios foram atualizados: C:\Users\Inyaga UFRJ\Documents\Automacao-Site\google-analytics-project\output\relatorio_site_inyaga.xlsx
+2026-10-09 13:36:03,777 | INFO | orquestrador | Solicitando execução do Power Automate Desktop. runId=e9b85925-4ee3-4c03-a3e6-5a5c4101d84d
+2026-10-09 13:36:03,846 | INFO | orquestrador | Solicitação enviada ao PAD; aguardando status em C:\Users\Inyaga UFRJ\Documents\Automacao-Site\google-analytics-project\output\flow_status.json. Abrir a URL não confirma que o fluxo terminou.
+2026-10-09 13:36:28,858 | ERROR | orquestrador | O arquivo de status existe, mas não pôde ser lido.
+Traceback (most recent call last):
+  File "C:\Users\Inyaga UFRJ\Documents\Automacao-Site\google-analytics-project\main.py", line 117, in iniciar_e_monitorar_fluxo
+    status = json.load(arquivo)
+  File "C:\Users\Inyaga UFRJ\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "C:\Users\Inyaga UFRJ\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 341, in loads
+    raise JSONDecodeError("Unexpected UTF-8 BOM (decode using utf-8-sig)",
+                          s, 0)
+json.decoder.JSONDecodeError: Unexpected UTF-8 BOM (decode using utf-8-sig): line 1 column 1 (char 0)
+2026-10-09 13:36:28,881 | ERROR | orquestrador | A automação foi encerrada com erro.
+Traceback (most recent call last):
+  File "C:\Users\Inyaga UFRJ\Documents\Automacao-Site\google-analytics-project\main.py", line 150, in <module>
+    iniciar_e_monitorar_fluxo()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Inyaga UFRJ\Documents\Automacao-Site\google-analytics-project\main.py", line 117, in iniciar_e_monitorar_fluxo
+    status = json.load(arquivo)
+  File "C:\Users\Inyaga UFRJ\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "C:\Users\Inyaga UFRJ\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 341, in loads
+    raise JSONDecodeError("Unexpected UTF-8 BOM (decode using utf-8-sig)",
+                          s, 0)
+json.decoder.JSONDecodeError: Unexpected UTF-8 BOM (decode using utf-8-sig): line 1 column 1 (char 0)
+2026-10-09 13:38:29,619 | INFO | orquestrador | Iniciando script: script_resumo_trafego.py
+2026-10-09 13:38:31,709 | INFO | google_analytics | Resumo_Diario: validação concluída; 4 linhas recebidas, 43 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:38:31,820 | WARNING | orquestrador | [script_resumo_trafego.py] mensagens:
+2026-10-09 13:38:31,709 | INFO | google_analytics | Resumo_Diario: valida��o conclu�da; 4 linhas recebidas, 43 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:38:31,821 | INFO | orquestrador | Script concluído: script_resumo_trafego.py
+2026-10-09 13:38:31,821 | INFO | orquestrador | Iniciando script: script_paginas.py
+2026-10-09 13:38:33,578 | INFO | google_analytics | Paginas: validação concluída; 16 linhas recebidas, 140 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:38:33,677 | WARNING | orquestrador | [script_paginas.py] mensagens:
+2026-10-09 13:38:33,578 | INFO | google_analytics | Paginas: valida��o conclu�da; 16 linhas recebidas, 140 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:38:33,677 | INFO | orquestrador | Script concluído: script_paginas.py
+2026-10-09 13:38:33,677 | INFO | orquestrador | Iniciando script: script_aquisicao.py
+2026-10-09 13:38:35,638 | INFO | google_analytics | Aquisicao: validação concluída; 10 linhas recebidas, 89 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:38:35,728 | WARNING | orquestrador | [script_aquisicao.py] mensagens:
+2026-10-09 13:38:35,638 | INFO | google_analytics | Aquisicao: valida��o conclu�da; 10 linhas recebidas, 89 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:38:35,728 | INFO | orquestrador | Script concluído: script_aquisicao.py
+2026-10-09 13:38:35,728 | INFO | orquestrador | Iniciando script: script_dispositivos.py
+2026-10-09 13:38:37,009 | INFO | google_analytics | Dispositivos: validação concluída; 5 linhas recebidas, 65 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:38:37,106 | WARNING | orquestrador | [script_dispositivos.py] mensagens:
+2026-10-09 13:38:37,009 | INFO | google_analytics | Dispositivos: valida��o conclu�da; 5 linhas recebidas, 65 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:38:37,107 | INFO | orquestrador | Script concluído: script_dispositivos.py
+2026-10-09 13:38:37,107 | INFO | orquestrador | Iniciando script: script_localizacao.py
+2026-10-09 13:38:39,075 | INFO | google_analytics | Localização: validação concluída; 10 linhas recebidas, 91 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:38:39,177 | WARNING | orquestrador | [script_localizacao.py] mensagens:
+2026-10-09 13:38:39,075 | INFO | google_analytics | Localiza��o: valida��o conclu�da; 10 linhas recebidas, 91 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:38:39,178 | INFO | orquestrador | Script concluído: script_localizacao.py
+2026-10-09 13:38:39,178 | INFO | orquestrador | Iniciando script: script_eventos.py
+2026-10-09 13:38:40,978 | INFO | google_analytics | Eventos: validação concluída; 25 linhas recebidas, 294 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:38:41,079 | WARNING | orquestrador | [script_eventos.py] mensagens:
+2026-10-09 13:38:40,978 | INFO | google_analytics | Eventos: valida��o conclu�da; 25 linhas recebidas, 294 linhas finais; arquivo=output\relatorio_site_inyaga.xlsx
+2026-10-09 13:38:41,079 | INFO | orquestrador | Script concluído: script_eventos.py
+2026-10-09 13:38:41,079 | INFO | orquestrador | Todos os relatórios foram atualizados: C:\Users\Inyaga UFRJ\Documents\Automacao-Site\google-analytics-project\output\relatorio_site_inyaga.xlsx
+2026-10-09 13:38:41,080 | INFO | orquestrador | Solicitando execução do Power Automate Desktop. runId=204e8fdb-5d58-4cfe-b871-cfbcf23f3451
+2026-10-09 13:38:41,170 | INFO | orquestrador | Solicitação enviada ao PAD; aguardando status em C:\Users\Inyaga UFRJ\Documents\Automacao-Site\google-analytics-project\output\flow_status.json. Abrir a URL não confirma que o fluxo terminou.
+2026-10-09 13:39:06,174 | INFO | orquestrador | Fluxo PAD concluído com sucesso. runId=204e8fdb-5d58-4cfe-b871-cfbcf23f3451
+2026-10-09 13:39:06,174 | INFO | orquestrador | Automação concluída com sucesso.

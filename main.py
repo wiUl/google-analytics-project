@@ -41,9 +41,7 @@ SCRIPTS = [
 ]
 
 FLOW_BASE_URL = (
-    "ms-powerautomate:/console/flow/run"
-    "?environmentid=Default-e0b8308a-8004-442e-bd3d-ec333d7809b7"
-    "&workflowid=c0d08ea8-4f8e-4777-a335-4c701b9d0371&source=Other"
+    "ms-powerautomate:/console/flow/run?environmentid=Default-e0b8308a-8004-442e-bd3d-ec333d7809b7&workflowid=679a067b-315b-4f09-bf94-2b4de4f5044a&source=Other"
 )
 FLOW_TIMEOUT_SECONDS = 1800
 FLOW_POLL_SECONDS = 5
@@ -100,7 +98,8 @@ def iniciar_e_monitorar_fluxo():
 
     logger.info("Solicitando execução do Power Automate Desktop. runId=%s", run_id)
     try:
-        os.startfile(flow_url)
+        #os.startfile(flow_url)
+        os.startfile(FLOW_BASE_URL)
     except OSError:
         logger.exception("Não foi possível abrir a URL do Power Automate Desktop.")
         raise
