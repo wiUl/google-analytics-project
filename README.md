@@ -1,49 +1,55 @@
-# Análise de tráfego do site Inyaga — Google Analytics
+# Automação de relatórios do Google Analytics 4 — Inyaga
 
-Projeto de automação para coletar, tratar e consolidar dados do Google Analytics 4 (GA4) do site do projeto Inyaga. Os relatórios são obtidos pela API do Google Analytics e organizados em uma planilha Excel para apoiar análises de tráfego, engajamento, aquisição e comportamento dos visitantes.
+Projeto em Python que consulta a propriedade do Google Analytics 4 (GA4) do site do projeto Inyaga e consolida seis relatórios em uma planilha Excel. A automação combina consultas à API, tratamento tabular com Pandas, atualização de abas com OpenPyXL, logging e acionamento de um fluxo do Power Automate Desktop (PAD).
 
-O repositório reúne scripts Python para consultar diferentes dimensões e métricas do GA4, utilitários para validar e consolidar resultados e um script principal que coordena a execução dos relatórios e aciona um fluxo do Power Automate Desktop.
+> **Estado:** em desenvolvimento. A documentação descreve o código inspecionado; a execução ponta a ponta, o acesso à propriedade GA4 e o fluxo PAD não foram validados nesta revisão.
 
 ## Objetivos
-- Automatizar a extração de dados do Google Analytics 4.
-- Organizar os resultados em abas específicas de uma única planilha Excel.
-- Evitar registros duplicados por meio de chaves definidas para cada relatório.
-- Preservar dados existentes quando uma consulta não retorna linhas.
-- Registrar eventos, avisos e falhas para facilitar o diagnóstico.
-- Acionar um fluxo do Power Automate Desktop após a geração dos relatórios.
 
-## Tecnologias utilizadas
-| Tecnologia | Utilização |
-| --- | --- |
-| **Python** | Linguagem principal e orquestração da automação. |
-| **Google Analytics Data API (GA4)** | Consulta de dimensões e métricas da propriedade de Analytics. |
-| **google-analytics-data** | Cliente Python para acessar a API do Google Analytics. |
-| **Pandas** | Transformação, validação e consolidação dos dados em DataFrames. |
-| **OpenPyXL** | Escrita e atualização das abas do arquivo Excel. |
-| **Excel (.xlsx)** | Formato de saída dos relatórios. |
-| **Power Automate Desktop** | Acionamento de um fluxo de automação após a atualização da planilha. |
-| **Logging** | Registro de eventos no terminal e em arquivo. |
-| **Git e GitHub** | Versionamento e hospedagem do código. |
+- Automatizar consultas recorrentes ao GA4.
+- Consolidar os resultados em abas específicas de uma planilha Excel.
+- Atualizar registros por chaves definidas para cada relatório, reduzindo duplicações.
+- Evitar substituir uma aba existente quando uma consulta não retorna dados.
+- Registrar eventos e falhas para apoiar o diagnóstico.
+- Solicitar a execução de um fluxo do Power Automate Desktop após a geração da planilha.
 
-## Relatórios gerados
-Os scripts consultam, por padrão, o período dos **últimos sete dias até ontem** (7daysAgo a yesterday). Os resultados são consolidados em output/relatorio_site_inyaga.xlsx.
+## Relatórios
 
-| Script | Aba do Excel | Conteúdo |
+Os seis scripts consultam, por padrão, o período de **sete dias atrás até ontem** (7daysAgo a yesterday).
+
+| Script | Aba no Excel | Dimensões e indicadores principais |
 | --- | --- | --- |
-| script_resumo_trafego.py | Resumo_Diario | Indicadores diários gerais: usuários ativos, novos usuários, sessões, visualizações, taxa de engajamento, duração média da sessão e eventos. |
-| script_paginas.py | Paginas | Desempenho de páginas por data, endereço e título, com métricas de audiência e engajamento. |
-| script_aquisicao.py | Aquisicao | Aquisição por grupo de canais padrão da sessão, origem e meio. |
-| script_dispositivos.py | Dispositivos | Métricas por data e categoria de dispositivo. |
-| script_localizacao.py | Localização | Métricas por data, país, região/estado e cidade. |
-| script_eventos.py | Eventos | Ocorrências de eventos e usuários por data e nome do evento. |
+| **script_resumo_trafego.py** | Resumo_Diario | Data; usuários ativos e novos, sessões, visualizações, taxa de engajamento, duração média da sessão e eventos. |
+| **script_paginas.py** | Paginas | Data, caminho e título da página; usuários ativos, sessões, visualizações e engajamento. |
+| **script_aquisicao.py** | Aquisicao | Data, grupo de canais, origem e meio; usuários, sessões, visualizações e engajamento. |
+| **script_dispositivos.py** | Dispositivos | Data e categoria de dispositivo; usuários, sessões, visualizações e engajamento. |
+| **script_localizacao.py** | Localização | Data, país, região e cidade; usuários, sessões e visualizações. |
+| **script_eventos.py** | Eventos | Data e nome do evento; contagem de eventos e usuários. |
 
-### Atualização e validação
-O módulo planilha_utils.py centraliza a atualização das abas. Ele verifica o formato dos dados, a presença das colunas-chave e se os valores dessas chaves estão preenchidos. Em seguida, combina registros antigos e novos, remove duplicatas mantendo a versão mais recente e ordena os dados antes de salvar a aba correspondente.
+O arquivo de saída é **output/relatorio_site_inyaga.xlsx**. A rotina **atualizar_planilha**, em **planilha_utils.py**, valida o tipo dos dados, nomes de colunas duplicados, presença das colunas-chave e valores nulos nas chaves. Ela combina os dados novos com os existentes, mantém o registro mais recente para cada chave e substitui apenas a aba correspondente. Quando a API não retorna linhas, os scripts interrompem a atualização em vez de gravar uma tabela vazia.
 
-Se uma consulta não retornar linhas, a rotina evita substituir a aba existente por uma tabela vazia. Erros de gravação também são registrados.
+As chaves de consolidação configuradas nos scripts são:
 
-## Estrutura do repositório
-```text
+- Resumo diário: data
+- Páginas: data + endereco
+- Aquisição: data + canal + origem + meio
+- Dispositivos: data + dispositivo
+- Localização: data + pais + estado + cidade
+- Eventos: data + evento
+
+## Tecnologias
+
+- **Python** — orquestração e processamento.
+- **Google Analytics Data API** e pacote google-analytics-data — consultas à propriedade GA4.
+- **Pandas** — transformação, validação e consolidação tabular.
+- **OpenPyXL** — atualização do arquivo Excel.
+- **Power Automate Desktop** — execução de um fluxo externo à aplicação Python.
+- **Logging** — mensagens de execução e diagnóstico.
+- **Git/GitHub** — versionamento do projeto.
+
+## Estrutura
+
+~~~text
 .
 ├── main.py
 ├── planilha_utils.py
@@ -54,94 +60,115 @@ Se uma consulta não retornar linhas, a rotina evita substituir a aba existente 
 ├── script_localizacao.py
 ├── script_eventos.py
 ├── requirements.txt
+├── docs/
+│   └── monitoramento_power_automate.md
 ├── logs/
 │   └── automacao.log
 └── output/
     ├── relatorio_site_inyaga.xlsx
     └── flow_status.json
-```
+~~~
 
-As pastas logs/ e output/ são criadas pelo programa quando necessário. Os arquivos gerados durante a execução podem não estar versionados no Git.
+A pasta output é criada pelo programa quando necessário; a planilha e o arquivo de status são artefatos de execução e podem não existir antes da primeira execução. O repositório também contém atualmente um diretório __pycache__ versionado, que não aparece na estrutura acima por ser artefato gerado.
 
 ## Pré-requisitos
-- Windows, para o acionamento do Power Automate Desktop pelo esquema de URL ms-powerautomate:.
-- Python instalado e acessível pelo terminal.
-- Acesso à propriedade do Google Analytics 4 consultada pelo projeto.
-- Credenciais do Google com permissão para consultar a propriedade.
-- Power Automate Desktop instalado e com o fluxo correto configurado.
-- Excel ou aplicativo compatível para consultar a planilha gerada (opcional).
+
+- Windows, pois o acionamento do PAD utiliza os.startfile e o esquema de URL ms-powerautomate:.
+- Python e acesso ao terminal.
+- Acesso autorizado à propriedade GA4 configurada nos scripts.
+- Credenciais Google com permissão para consultar essa propriedade, configuradas por Application Default Credentials (ADC).
+- Power Automate Desktop instalado e configurado com o fluxo correspondente.
+- Excel ou outro leitor compatível para abrir a planilha gerada (opcional).
+
+As versões das bibliotecas estão listadas em requirements.txt. Não foi definida nem validada nesta revisão uma versão mínima específica de Python.
 
 ## Configuração e execução
+
 ### 1. Clonar o repositório
-```bash
+
+~~~bash
 git clone https://github.com/wiUl/google-analytics-project.git
 cd google-analytics-project
-```
+~~~
 
 ### 2. Criar e ativar um ambiente virtual
-```bash
-python -m venv .venv
-```
-No Windows PowerShell:
-```powershell
-.venv\Scripts\Activate.ps1
-```
 
-### 3. Instalar as dependências
-```bash
+~~~bash
+python -m venv .venv
+~~~
+
+No Windows PowerShell:
+
+~~~powershell
+.venv\Scripts\Activate.ps1
+~~~
+
+### 3. Instalar dependências
+
+~~~bash
 python -m pip install --upgrade pip
-pip install -r requirements.txt
-```
+python -m pip install -r requirements.txt
+~~~
 
 ### 4. Configurar a autenticação do Google
-O cliente BetaAnalyticsDataClient utiliza as credenciais padrão do Google (Application Default Credentials). Configure uma conta ou conta de serviço autorizada a consultar a propriedade GA4, seguindo a [documentação oficial sobre Application Default Credentials](https://cloud.google.com/docs/authentication/provide-credentials-adc).
 
-**Não versione arquivos de credenciais, chaves privadas ou tokens.** Mantenha-os fora do repositório.
+O cliente BetaAnalyticsDataClient usa as credenciais padrão do Google. Configure ADC com uma identidade autorizada a consultar a propriedade GA4. Consulte a [documentação oficial de Application Default Credentials](https://cloud.google.com/docs/authentication/provide-credentials-adc).
 
-### 5. Executar a automação
-Com as credenciais configuradas e o Power Automate Desktop preparado, execute:
-```bash
+**Não versione chaves privadas, arquivos de credenciais, tokens ou segredos.** Mantenha as credenciais fora do repositório.
+
+### 5. Conferir os parâmetros locais
+
+Antes de executar, confira os identificadores da propriedade GA4 definidos nos seis scripts de relatório e a constante FLOW_BASE_URL em main.py. Atualmente, esses parâmetros estão definidos diretamente no código; não são carregados de variáveis de ambiente. Configure-os para os recursos aos quais você tem acesso e não compartilhe identificadores internos desnecessariamente.
+
+### 6. Executar
+
+~~~bash
 python main.py
-```
+~~~
 
-O main.py executa sequencialmente os seis scripts. Se algum deles falhar, a execução é interrompida e o erro é registrado. Após verificar que a planilha foi criada e não está vazia, o programa solicita a execução do fluxo do Power Automate Desktop.
+O programa executa os seis scripts em sequência. Se algum script terminar com erro, a orquestração é interrompida. Depois das consultas, verifica se a planilha foi criada e não está vazia; em seguida, solicita a abertura do fluxo PAD e aguarda um resultado no arquivo output/flow_status.json.
 
 ## Integração com Power Automate Desktop
-A URL de execução é configurada pela constante FLOW_BASE_URL em main.py. Ela deve apontar para o ambiente e o identificador do fluxo correto.
 
-Para o Python detectar o término do fluxo, o Power Automate Desktop precisa gravar output/flow_status.json ao final da execução, na pasta output deste projeto.
+O monitoramento depende de um arquivo de status que o próprio fluxo PAD deve gravar ao terminar. As instruções de configuração estão em [docs/monitoramento_power_automate.md](docs/monitoramento_power_automate.md).
 
-Em caso de sucesso, o conteúdo esperado é:
-```json
+Resultado esperado em caso de sucesso:
+
+~~~json
 {"status": "success"}
-```
-Em caso de falha:
-```json
+~~~
+
+Resultado esperado em caso de falha:
+
+~~~json
 {"status": "error", "message": "Descrição do erro"}
-```
+~~~
 
-O programa verifica o arquivo a cada cinco segundos e aguarda até 30 minutos. Se o arquivo não for criado, a execução termina com erro de tempo esgotado. Abrir a URL do Power Automate, por si só, não confirma que o fluxo terminou.
+O Python consulta o arquivo a cada cinco segundos, por até 30 minutos. A abertura da URL do PAD apenas solicita a execução; o arquivo de status é que informa ao programa o resultado comunicado pelo fluxo. O PAD precisa ter permissão de escrita na pasta output do mesmo diretório local do projeto.
 
-> **Importante:** ajuste FLOW_BASE_URL para o fluxo correto e configure as ações finais do PAD para gravar o status esperado. O perfil do Chrome, se utilizado, é definido nas ações do próprio fluxo, não nos scripts de consulta do Google Analytics.
+## Logs e diagnóstico
 
-## Logs e solução de problemas
-- **Log principal:** logs/automacao.log.
-- **Planilha gerada:** output/relatorio_site_inyaga.xlsx.
-- **Status do PAD:** output/flow_status.json.
+- Log: logs/automacao.log
+- Planilha: output/relatorio_site_inyaga.xlsx
+- Status do fluxo: output/flow_status.json
 
-Problemas comuns:
-- **Erro de autenticação:** confira as credenciais padrão do Google e a permissão de acesso à propriedade GA4.
-- **Consulta sem resultados:** verifique o período, as dimensões e as métricas. O projeto evita apagar a aba existente quando a resposta está vazia.
-- **Falha ao salvar o Excel:** feche a planilha caso esteja aberta e execute novamente.
-- **Espera até o limite de tempo do PAD:** confirme que o fluxo correto foi iniciado e que ele grava flow_status.json no caminho esperado.
-- **Dependências:** instale os pacotes usando requirements.txt no mesmo ambiente Python que executará o projeto.
+| Sintoma | Verificação sugerida |
+| --- | --- |
+| Erro de autenticação | Confira as ADC e as permissões de acesso à propriedade GA4. |
+| Consulta sem linhas | Verifique o período, as dimensões, as métricas e se há dados disponíveis na propriedade. A execução cancela a atualização quando o resultado está vazio. |
+| Falha ao gravar o Excel | Feche a planilha caso esteja aberta e confira as permissões do diretório. |
+| Timeout do PAD | Confira se o fluxo correto iniciou e se grava um JSON válido no caminho esperado. |
+| Módulo não encontrado | Ative o ambiente virtual correto e reinstale as dependências de requirements.txt. |
 
-## Possíveis evoluções
-- Parametrizar a propriedade GA4, o período de consulta e os caminhos de saída.
-- Separar configurações do código usando variáveis de ambiente.
-- Adicionar testes automatizados para a consolidação e validação dos dados.
-- Agendar a execução e documentar o fluxo completo.
-- Construir dashboards a partir da planilha consolidada.
+## Limitações e próximos passos
 
-## Status
-**Em desenvolvimento.** O projeto contém extração de seis conjuntos de relatórios, consolidação em Excel, registro de logs e integração com Power Automate Desktop. As credenciais e o fluxo PAD precisam ser configurados no ambiente de execução.
+- A propriedade GA4 e a URL do fluxo PAD são configuradas diretamente nos arquivos Python; parametrizá-las por configuração externa melhoraria a portabilidade.
+- O funcionamento ponta a ponta depende de credenciais Google válidas e de um fluxo PAD configurado no Windows.
+- Não há testes automatizados identificados no escopo desta revisão; a execução e os resultados não foram verificados nesta tarefa.
+- Recomenda-se adicionar __pycache__/ e logs gerados ao .gitignore e remover os artefatos gerados atualmente versionados em uma alteração separada. O arquivo logs/automacao.log deve ser revisado para garantir que não contenha dados operacionais sensíveis.
+- Recomenda-se criar testes unitários para a validação, deduplicação e preservação de abas em planilha_utils.py.
+- Recomenda-se mover os parâmetros de ambiente para configuração externa e documentar o procedimento de configuração do fluxo PAD.
+
+## Autoria
+
+Projeto hospedado por [wiUl no GitHub](https://github.com/wiUl). O escopo é a automação de relatórios de tráfego e engajamento para o site Inyaga.
