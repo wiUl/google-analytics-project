@@ -37,6 +37,16 @@ Os scripts consultam, por padrão, o período dos **últimos sete dias até onte
 | script_localizacao.py | Localização | Métricas por data, país, região/estado e cidade. |
 | script_eventos.py | Eventos | Ocorrências de eventos e usuários por data e nome do evento. |
 
+### Dimensões, métricas e chaves de cada aba
+| Aba | Dimensões consultadas | Métricas consultadas | Chaves de deduplicação |
+| --- | --- | --- | --- |
+| Resumo_Diario | data | usuários ativos, novos usuários, sessões, visualizações de página, taxa de engajamento, duração média da sessão, contagem de eventos | data |
+| Paginas | data, caminho da página, título da página | usuários ativos, sessões, visualizações, taxa de engajamento, duração média da sessão | data, endereço |
+| Aquisicao | data, grupo de canais da sessão, origem, meio | usuários ativos, novos usuários, sessões, visualizações, taxa de engajamento | data, canal, origem, meio |
+| Dispositivos | data, categoria do dispositivo | usuários ativos, novos usuários, sessões, visualizações, taxa de engajamento, duração média da sessão | data, dispositivo |
+| Localização | data, país, região, cidade | usuários ativos, novos usuários, sessões, visualizações | data, país, estado, cidade |
+| Eventos | data, nome do evento | contagem de eventos, total de usuários | data, evento |
+
 ### Atualização e validação
 O módulo planilha_utils.py centraliza a atualização das abas. Ele verifica o formato dos dados, a presença das colunas-chave e se os valores dessas chaves estão preenchidos. Em seguida, combina registros antigos e novos, remove duplicatas mantendo a versão mais recente e ordena os dados antes de salvar a aba correspondente.
 
